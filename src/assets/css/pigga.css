@@ -10779,7 +10779,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bc8c4c !important;
+  color: #f2e8db !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -11183,7 +11183,7 @@ hr {
 }
 
 .custom-list .info .head .title {
-  font-size: 14px;
+  font-size: 30px;
   margin-bottom: 0;
 }
 
@@ -11200,7 +11200,7 @@ hr {
 }
 
 .custom-list .info .body p {
-  font-size: 14px;
+  font-size: 25px;
   opacity: 1;
   margin-bottom: 0;
   font-weight: 400;
@@ -11380,7 +11380,7 @@ hr {
 }
 
 .header .overlay .title {
-  font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(40px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
   font-weight: bold;
 }
 
@@ -11548,4 +11548,9 @@ section.has-img-bg:after {
   font-size: 17px;
   opacity: .7;
   margin-bottom: 15px;
+}
+
+.pizza-custom{
+  color : #f2e8db;
+  font-family: "Dancing Script", sans-serif;
 }
