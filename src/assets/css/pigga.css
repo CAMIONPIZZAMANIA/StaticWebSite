@@ -11454,20 +11454,15 @@ section.py-lg {
   padding-bottom: 140px !important;
 }
 
-section.pattern-style-1 {
-  background-image: url(../imgs/style-1.png);
-}
-
-section.pattern-style-2 {
-  background-image: url(../imgs/style-2.png);
-}
-
-section.pattern-style-3 {
-  background-image: url(../imgs/style-3.png);
-}
-
 section.pattern-style-4 {
   background-image: url(../imgs/style-4.png);
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.has-overlay {
