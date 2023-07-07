@@ -11455,9 +11455,12 @@ section.py-lg {
 }
 
 section.pattern-style-4 {
-  background-image: url(../imgs/style-4.png);
+  background-image: url(../imgs/style-4-dark.png);
   /* Full height */
   height: 100%;
+  margin-top : 1%;
+  margin-left : 10%;
+  margin-right : 10%;
 
   /* Center and scale the image nicely */
   background-position: center;
