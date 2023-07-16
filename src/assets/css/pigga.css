@@ -68,7 +68,7 @@ body {
   line-height: 1.5;
   color: #444;
   text-align: left;
-  background-color: #fff;
+  background-color: #0a0c0d;
 }
 
 [tabindex="-1"]:focus {
@@ -11334,9 +11334,11 @@ hr {
 
 .header {
   position: relative;
-  min-height: 650px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  min-height: 600px;
+  background: url(../imgs/header.jpeg) no-repeat center center fixed;
   background-size: cover;
+  margin-left : 10%;
+  margin-right : 10%;
 }
 
 .header .overlay {
