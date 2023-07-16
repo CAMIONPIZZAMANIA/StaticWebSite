@@ -11337,8 +11337,8 @@ hr {
   min-height: 600px;
   background: url(../imgs/header.jpeg) no-repeat center center fixed;
   background-size: cover;
-  margin-left : 10%;
-  margin-right : 10%;
+  margin-left : 0%;
+  margin-right : 0%;
 }
 
 .header .overlay {
@@ -11461,8 +11461,8 @@ section.pattern-style-4 {
   /* Full height */
   height: 100%;
   margin-top : 1%;
-  margin-left : 10%;
-  margin-right : 10%;
+  margin-left : 0%;
+  margin-right : 0%;
 
   /* Center and scale the image nicely */
   background-position: center;
