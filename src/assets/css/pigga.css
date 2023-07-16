@@ -11559,3 +11559,22 @@ section.has-img-bg:after {
   color : #f2e8db;
   font-family: "Dancing Script", sans-serif;
 }
+
+.pizza-custom h3{
+  font-size: calc(40px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
+  font-weight : bolder;
+}
+
+.pizza-custom h4{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.location-custom{
+  color : #ffffff;
+}
+
+.month-pizza-custom{
+  padding-left: 20%;
+  padding-right: 20%;
+}
