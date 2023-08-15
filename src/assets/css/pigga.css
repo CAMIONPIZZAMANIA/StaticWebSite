@@ -11556,18 +11556,27 @@ section.has-img-bg:after {
 }
 
 .pizza-custom{
-  color : #f2e8db;
+  color : #ffffff;
   font-family: "Dancing Script", sans-serif;
+  font-size: 1rem;
 }
 
 .pizza-custom h3{
-  font-size: calc(40px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
+  font-size: calc(50px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
   font-weight : bolder;
 }
 
-.pizza-custom h4{
-  font-size: 1rem;
+.pizza-custom h5{
   font-weight: bold;
+}
+
+.pizza-custom body{
+  font-weight: bold;
+}
+
+.pizza-custom p{
+  font-weight: bold;
+  font-size: calc(25px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
 }
 
 .location-custom{
