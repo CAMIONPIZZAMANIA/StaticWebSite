@@ -68,7 +68,7 @@ body {
   line-height: 1.5;
   color: #444;
   text-align: left;
-  background-color: #fff;
+  background-color: #0a0c0d;
 }
 
 [tabindex="-1"]:focus {
@@ -10779,7 +10779,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bc8c4c !important;
+  color: #f2e8db !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -11183,7 +11183,7 @@ hr {
 }
 
 .custom-list .info .head .title {
-  font-size: 14px;
+  font-size: 30px;
   margin-bottom: 0;
 }
 
@@ -11200,7 +11200,7 @@ hr {
 }
 
 .custom-list .info .body p {
-  font-size: 14px;
+  font-size: 25px;
   opacity: 1;
   margin-bottom: 0;
   font-weight: 400;
@@ -11334,9 +11334,11 @@ hr {
 
 .header {
   position: relative;
-  min-height: 650px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  min-height: 600px;
+  background: url(../imgs/header.jpeg) no-repeat center center fixed;
   background-size: cover;
+  margin-left : 0%;
+  margin-right : 0%;
 }
 
 .header .overlay {
@@ -11380,7 +11382,7 @@ hr {
 }
 
 .header .overlay .title {
-  font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(40px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
   font-weight: bold;
 }
 
@@ -11454,20 +11456,18 @@ section.py-lg {
   padding-bottom: 140px !important;
 }
 
-section.pattern-style-1 {
-  background-image: url(../imgs/style-1.png);
-}
-
-section.pattern-style-2 {
-  background-image: url(../imgs/style-2.png);
-}
-
-section.pattern-style-3 {
-  background-image: url(../imgs/style-3.png);
-}
-
 section.pattern-style-4 {
-  background-image: url(../imgs/style-4.png);
+  background-image: url(../imgs/style-4-dark.png);
+  /* Full height */
+  height: 100%;
+  margin-top : 1%;
+  margin-left : 0%;
+  margin-right : 0%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.has-overlay {
@@ -11553,4 +11553,37 @@ section.has-img-bg:after {
   font-size: 17px;
   opacity: .7;
   margin-bottom: 15px;
+}
+
+.pizza-custom{
+  color : #ffffff;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 1rem;
+}
+
+.pizza-custom h3{
+  font-size: calc(50px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
+  font-weight : bolder;
+}
+
+.pizza-custom h5{
+  font-weight: bold;
+}
+
+.pizza-custom body{
+  font-weight: bold;
+}
+
+.pizza-custom p{
+  font-weight: bold;
+  font-size: calc(25px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
+}
+
+.location-custom{
+  color : #ffffff;
+}
+
+.month-pizza-custom{
+  padding-left: 20%;
+  padding-right: 20%;
 }
