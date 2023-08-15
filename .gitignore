@@ -9,8 +9,7 @@
 .idea/**/shelf
 
 # AWS User-specific
-.idea/**/aws.xml
-src/public_html/aws-credentials.json
+.idea/**/aws.xmlf
 
 # Generated files
 .idea/**/contentModel.xml
