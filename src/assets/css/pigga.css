@@ -11195,8 +11195,8 @@ hr {
 
 .custom-list .info .body {
   padding: 14px 0;
-  font-size: 14px;
-  opacity: .7;
+  font-size: 10px;
+  opacity: 7;
 }
 
 .custom-list .info .body p {
@@ -11570,13 +11570,9 @@ section.has-img-bg:after {
   font-weight: bold;
 }
 
-.pizza-custom body{
-  font-weight: bold;
-}
-
 .pizza-custom p{
   font-weight: bold;
-  font-size: calc(25px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) !important;
+  font-color : #ffff;
 }
 
 .location-custom{
