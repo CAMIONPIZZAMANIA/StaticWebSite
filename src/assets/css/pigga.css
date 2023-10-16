@@ -11583,3 +11583,11 @@ section.has-img-bg:after {
   padding-left: 20%;
   padding-right: 20%;
 }
+
+.center-pizza-moment{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+  border-radius: 50%;
+}
