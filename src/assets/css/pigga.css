@@ -11591,3 +11591,15 @@ section.has-img-bg:after {
   width:50%;
   border-radius: 50%;
 }
+
+.title{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.subtitle{
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
