@@ -47,7 +47,7 @@ a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #ffffff;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -329,7 +329,7 @@ iframe {
   z-index: -1;
   width: 300%;
   height: 100%;
-  background: #bc8c4c;
+  background: #ffffff;
   top: 0;
   left: -100%;
 
