@@ -11469,7 +11469,7 @@ section.pattern-style-3 {
 }
 
 section.pattern-style-4 {
-  background-image: url(../imgs/style-4-dark.png);
+  background-color : #0a0c0d;
   /* Full height */
   height: 100%;
   margin-top : 1%;
@@ -11569,7 +11569,6 @@ section.has-img-bg:after {
 
 .pizza-custom{
   color : #ffffff;
-  font-family: "Dancing Script", sans-serif;
   font-size: 1rem;
 }
 
