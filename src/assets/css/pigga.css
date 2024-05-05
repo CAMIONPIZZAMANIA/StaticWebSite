@@ -11469,7 +11469,7 @@ section.pattern-style-3 {
 }
 
 section.pattern-style-4 {
-  background-color : #0a0c0d;
+  background-image: url(../imgs/style-4-dark.png);
   /* Full height */
   height: 100%;
   margin-top : 1%;
