@@ -1,0 +1,16 @@
+cloud-architecture-diagram
+
+direction right
+
+// Define groups and nodes
+Region (eu-west-3) [icon: aws-region]{
+
+    DNS[icon: aws-route-53]
+    HTTPS[icon: aws-cloudfront]
+    STATIC[icon : aws-s3]
+    CODE[icon : github]
+}
+
+// Flows
+DNS - HTTPS
+HTTPS - STATIC
