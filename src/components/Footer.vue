@@ -1,4 +1,7 @@
 <script setup>
+import { ref } from 'vue'
+
+let currentYear = ref(new Date().getFullYear());
 
 </script>
 
@@ -7,7 +10,7 @@
     <div class="container">
       <div class="row align-items-center text-center text-md-center">
         <div class="col">
-          <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, <a href="https://www.camionpizzamania.ch" target="_blank">Camion Pizza Mania</a>  Tous droits réservés </p>
+          <p class="mb-0 small">{{ currentYear }}, <a href="https://www.camionpizzamania.ch" target="_blank">Camion Pizza Mania</a>  Tous droits réservés </p>
         </div>
         <div class="d-none d-md-block">
         </div>
@@ -18,4 +21,4 @@
 
 <style scoped>
 
-</style>
+</style>6m$ziWqF2,R;4MP
