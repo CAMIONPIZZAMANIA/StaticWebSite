@@ -7,6 +7,8 @@ const pizzas = ref(jsondata)
 
 <template>
   <div class="container raise-2">
+    <h3 class="title">Nos blanches</h3>
+    <h4 class="subtitle">--- au mascarpone ---</h4>
     <div class="row">
       <div v-for="pizza in pizzas" class="col-md-6 mb-4">
         <a href="javascrip:void(0)" class="custom-list">

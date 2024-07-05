@@ -10,7 +10,6 @@
       </div>
       <!-- The Modal -->
       <div id="pizzaModal" class="modal">
-        <span class="close">&times;</span>
         <img id=pizzaBig class="modal-content" src="../../assets/imgs/pizza-du-moment.jpg">
         <div id="caption"></div>
       </div>

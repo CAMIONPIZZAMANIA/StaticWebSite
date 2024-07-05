@@ -1,6 +1,7 @@
 <script setup>
 import Pizzas from "@/components/Pizzas/Pizzas.vue"
 import PizzasWhite from "@/components/Pizzas/PizzasWhite.vue"
+import PizzaOfTheMoment from "@/components/Pizzas/PizzaOfTheMoment.vue";
 </script>
 
 <template>
@@ -15,10 +16,11 @@ import PizzasWhite from "@/components/Pizzas/PizzasWhite.vue"
         Mozzarella Fior di latte.<br>
         -------------------
       </h4>
-      <h4 class="section-title mb-6 pb-3 text-center">
-        -------------------
-      </h4>
     </div>
+      <PizzaOfTheMoment />
+    <h4 class="section-title mb-6 pb-3 text-center">
+      -------------------
+    </h4>
       <Pizzas />
       <PizzasWhite />
     <div class="container raise-2">
