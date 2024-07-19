@@ -1,0 +1,34 @@
+[
+  {
+    "name" : "Jambon",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Salami piquant",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Gorgonzola",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Chèvre",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Anchois",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Raclette",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Tomme vaudoise",
+    "price" : "2.-"
+  },
+  {
+    "name" : "Thon",
+    "price" : "2.-"
+  }
+]

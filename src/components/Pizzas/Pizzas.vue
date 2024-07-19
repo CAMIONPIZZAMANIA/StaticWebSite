@@ -6,7 +6,6 @@ const pizzas = ref(jsondata)
 </script>
 
 <template>
-<div class="container raise-2">
     <div class="row">
       <div v-for="pizza in pizzas" class="col-md-6 mb-4">
         <a href="javascrip:void(0)" class="custom-list">
@@ -22,7 +21,6 @@ const pizzas = ref(jsondata)
         </a>
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped>

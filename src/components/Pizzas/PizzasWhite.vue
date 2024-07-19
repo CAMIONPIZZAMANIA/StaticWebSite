@@ -6,7 +6,6 @@ const pizzas = ref(jsondata)
 </script>
 
 <template>
-  <div class="container raise-2">
     <h3 class="title">Nos blanches</h3>
     <h4 class="subtitle">--- au mascarpone ---</h4>
     <div class="row">
@@ -24,7 +23,6 @@ const pizzas = ref(jsondata)
         </a>
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
