@@ -1,13 +1,12 @@
 <script setup>
 import { ref } from 'vue'
-import jsondata from '../../data/pizzas_white.json'
+import jsondata from '../../../../data/pizzas.json'
 
 const pizzas = ref(jsondata)
+
 </script>
 
 <template>
-    <h3 class="title">Nos blanches</h3>
-    <h4 class="subtitle">--- au mascarpone ---</h4>
     <div class="row">
       <div v-for="pizza in pizzas" class="col-md-6 mb-4">
         <a href="javascrip:void(0)" class="custom-list">
@@ -27,5 +26,4 @@ const pizzas = ref(jsondata)
 </template>
 
 <style scoped>
-
 </style>

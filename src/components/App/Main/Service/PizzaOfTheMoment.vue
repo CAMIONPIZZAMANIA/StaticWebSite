@@ -6,12 +6,12 @@
   <div class="row">
     <div class="center-pizza-moment">
       <div class="img-holder">
-        <img id=pizzaOfTheMonth class="center-pizza-moment" src="../../assets/imgs/pizza-du-moment.jpg" alt="Pizza du moment : Merguez, salami piquant, poivrons, oignons et mozzarella." >
+        <img id=pizzaOfTheMonth class="center-pizza-moment" src="../../../../assets/imgs/pizza-du-moment.jpg" alt="Pizza du moment : Merguez, salami piquant, poivrons, oignons et mozzarella." >
         <a class="btn btn-primary mt-3">Ajouter</a>
       </div>
       <!-- The Modal -->
       <div id="pizzaModal" class="modal">
-        <img id=pizzaBig class="modal-content" src="../../assets/imgs/pizza-du-moment.jpg">
+        <img id=pizzaBig class="modal-content" src="../../../../assets/imgs/pizza-du-moment.jpg">
         <div id="caption"></div>
       </div>
       <a href="javascrip:void(0)" class="custom-list">

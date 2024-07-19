@@ -1,9 +1,9 @@
 <script setup>
-import Pizzas from "@/components/Pizzas/Pizzas.vue"
-import PizzasWhite from "@/components/Pizzas/PizzasWhite.vue"
-import PizzaOfTheMoment from "@/components/Pizzas/PizzaOfTheMoment.vue";
-import IngredientChoices from "@/components/Pizzas/IngredientChoices.vue";
-import PizzaWelcome from "@/components/Pizzas/PizzaWelcome.vue";
+import Pizzas from "@/components/App/Main/Service/Pizzas.vue"
+import PizzasWhite from "@/components/App/Main/Service/PizzasWhite.vue"
+import PizzaOfTheMoment from "@/components/App/Main/Service/PizzaOfTheMoment.vue";
+import IngredientChoices from "@/components/App/Main/Service/IngredientChoices.vue";
+import PizzaWelcome from "@/components/App/Main/Service/PizzaWelcome.vue";
 </script>
 
 <template>
