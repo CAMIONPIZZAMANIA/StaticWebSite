@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
-import jsondata1CHF from '../../../../data/ingredients_1chf.json'
+import jsondata1CHF from '../../../data/ingredients_1chf.json'
 const ingredients1CHF = ref(jsondata1CHF)
-import jsondata2CHF from '../../../../data/ingredients_2chf.json'
+import jsondata2CHF from '../../../data/ingredients_2chf.json'
 const ingredients2CHF = ref(jsondata2CHF)
 
 function getListOfIngredients(listOfIngredientsToFormat){

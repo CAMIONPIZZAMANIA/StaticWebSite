@@ -4,7 +4,7 @@
 
 <template>
   <div class="overlay">
-    <img src="../../../assets/imgs/logo.png" alt="" class="logo">
+    <img src="../../assets/imgs/logo.png" alt="" class="logo">
     <h1 class="subtitle">Bienvenue au Camion Pizza Mania</h1>
     <h6 class="card-title text-center">Ouvert de 18h00 à 21h00</h6>
     &nbsp;

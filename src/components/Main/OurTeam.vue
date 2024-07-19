@@ -12,7 +12,7 @@
           <div class="card">
             <div class="card-body">
               <div class="media align-items-center mb-3">
-                <img class="mr-3" src="../../../assets/imgs/avatar.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
+                <img class="mr-3" src="../../assets/imgs/avatar.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
                 <div class="media-body">
                   <h6 class="mt-1 mb-0">Olivier MICCOLI</h6>
                   <small class="text-muted mb-0">Le pizzaiolo</small>
@@ -28,7 +28,7 @@
           <div class="card">
             <div class="card-body">
               <div class="media align-items-center mb-3">
-                <img class="mr-3" src="../../../assets/imgs/food-truck.PNG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
+                <img class="mr-3" src="../../assets/imgs/food-truck.PNG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Pigga Landing page">
                 <div class="media-body">
                   <h6 class="mt-1 mb-0">Mania Truck</h6>
                   <small class="text-muted mb-0">La pizza</small>

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import jsondata from '../../../../data/pizzas_white.json'
+import jsondata from '../../../data/pizzas_white.json'
 
 const pizzas = ref(jsondata)
 </script>

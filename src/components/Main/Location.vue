@@ -1,9 +1,9 @@
 <script setup>
-    import imgVillageLeTerroir from '../../../assets/imgs/location-villars-le-terroir-closed.PNG'
-    import imgOrny from '../../../assets/imgs/location-orny.PNG'
-    import imgBottens from '../../../assets/imgs/location-bottens.PNG'
-    import imgPoliezLeGrand from '../../../assets/imgs/location-poliez-le-grand.PNG'
-    import imgBavois from '../../../assets/imgs/location-bavois.PNG'
+    import imgVillageLeTerroir from '../../assets/imgs/location-villars-le-terroir-closed.PNG'
+    import imgOrny from '../../assets/imgs/location-orny.PNG'
+    import imgBottens from '../../assets/imgs/location-bottens.PNG'
+    import imgPoliezLeGrand from '../../assets/imgs/location-poliez-le-grand.PNG'
+    import imgBavois from '../../assets/imgs/location-bavois.PNG'
 </script>
 
 <template>
