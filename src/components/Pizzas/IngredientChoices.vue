@@ -32,6 +32,7 @@ function getListOfIngredients(listOfIngredientsToFormat){
             <div class="body">
               <p>{{ getListOfIngredients(ingredients1CHF) }}</p>
             </div>
+            <a class="btn btn-primary mt-3">Ajouter</a>
           </div>
         </a>
       </div>
@@ -45,6 +46,7 @@ function getListOfIngredients(listOfIngredientsToFormat){
             <div class="body">
               <p>{{ getListOfIngredients(ingredients2CHF) }}</p>
             </div>
+            <a class="btn btn-primary mt-3">Ajouter</a>
           </div>
         </a>
       </div>

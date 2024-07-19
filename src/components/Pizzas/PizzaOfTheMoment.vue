@@ -7,6 +7,7 @@
     <div class="center-pizza-moment">
       <div class="img-holder">
         <img id=pizzaOfTheMonth class="center-pizza-moment" src="../../assets/imgs/pizza-du-moment.jpg" alt="Pizza du moment : Merguez, salami piquant, poivrons, oignons et mozzarella." >
+        <a class="btn btn-primary mt-3">Ajouter</a>
       </div>
       <!-- The Modal -->
       <div id="pizzaModal" class="modal">

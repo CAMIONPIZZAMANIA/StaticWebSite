@@ -19,6 +19,7 @@ const pizzas = ref(jsondata)
             <div class="body">
               <p>{{ pizza.ingredients }}</p>
             </div>
+            <a class="btn btn-primary mt-3">Ajouter</a>
           </div>
         </a>
       </div>
