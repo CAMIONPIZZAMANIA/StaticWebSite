@@ -1,0 +1,22 @@
+[
+  {
+    "name" : "Flammenkueche",
+    "price" : 15.00,
+    "ingredients" : "Oignons, lardons, mozzarella"
+  },
+  {
+    "name" : "Raclette",
+    "price" : 17.00,
+    "ingredients" : "Raclette, oignons, lardons, mozzarella"
+  },
+  {
+    "name" : "Chèvre miel",
+    "price" : 14.00,
+    "ingredients" : "Chèvre, miel, mozzarella"
+  },
+  {
+    "name" : "Cremossa",
+    "price" : 17.00,
+    "ingredients" : "Chèvre, gorgonzola, pecorino romano, raclette, mozzarella"
+  }
+]

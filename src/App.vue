@@ -1,7 +1,7 @@
 <script setup>
 import Navigation from '@/components/Navigation.vue'
 import Header from '@/components/Header.vue'
-import FeaturedFoods from "@/components/FeaturedFoods.vue"
+import Service from "@/components/Service.vue"
 import Location from "@/components/Location.vue";
 import OurTeam from "@/components/OurTeam.vue";
 import Prefooter from "@/components/Prefooter.vue";
@@ -13,7 +13,7 @@ import TeamSection from "@/components/OurTeam.vue";
 <template>
   <Navigation />
   <Header />
-  <FeaturedFoods />
+  <Service />
   <Location />
   <OurTeam />
   <Prefooter />
