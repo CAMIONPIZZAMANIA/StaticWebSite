@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <div class="container raise-2">
     <h3 class="section-title mb-6 pb-3 text-center">Nos pizzas</h3>
       <h4 class="section-title mb-6 pb-3 text-center">
         -------------------
@@ -18,7 +17,6 @@
       <h4 class="section-title mb-6 pb-3 text-center">
         -------------------
       </h4>
-    </div>
 </template>
 
 <style scoped>

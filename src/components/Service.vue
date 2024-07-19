@@ -8,8 +8,10 @@ import PizzaWelcome from "@/components/Pizzas/PizzaWelcome.vue";
 
 <template>
   <section id="pizzas" class="pattern-style-4 pizza-custom">
+    <div class="container raise-2">
       <PizzaWelcome />
       <PizzaOfTheMoment />
+    </div>
     <h4 class="section-title mb-6 pb-3 text-center">
       -------------------
     </h4>
