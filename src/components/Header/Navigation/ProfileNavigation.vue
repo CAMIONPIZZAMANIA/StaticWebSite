@@ -1,9 +1,8 @@
 <script setup>
-
 </script>
 
 <template>
-  <!-- Profil Navigation -->
+  <!-- Profile Navigation -->
     <div class="d-flex flex-row">
       <ul class="navbar-nav navbar-expand">
         <li class="nav-item">

@@ -1,6 +1,5 @@
 <script setup>
 </script>
-
 <template>
     <div class="contentbar">
       <!-- Start row -->
@@ -70,8 +69,8 @@
                       </div>
                     </div>
                     <div class="cart-footer text-right">
-                      <a href="" @click="addPizza" class="btn btn-danger my-1"><i class="ri-arrow-left-line ml-2"></i>Ajouter une pizza</a>
-                      <a href="page-checkout.html" class="btn btn-success my-1">Réserver<i class="ri-arrow-right-line ml-2"></i></a>
+                      <a href="" class="btn btn-danger my-1"><i class="ri-arrow-left-line ml-2"></i>Ajouter une pizza</a>
+                      <a href="" class="btn btn-success my-1">Réserver<i class="ri-arrow-right-line ml-2"></i></a>
                     </div>
                   </div>
                 </div>
