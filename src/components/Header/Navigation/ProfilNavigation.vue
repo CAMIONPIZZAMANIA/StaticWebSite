@@ -4,9 +4,8 @@
 
 <template>
   <!-- Profil Navigation -->
-  <div class="d-none d-lg-flex align-items-end">
-    <div class="d-flex">
-      <ul class="navbar-nav">
+    <div class="d-flex flex-row">
+      <ul class="navbar-nav navbar-expand">
         <li class="nav-item">
           <a class="nav-link" href="#cart">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -19,9 +18,7 @@
         </li>
       </ul>
     </div>
-  </div>
 </template>
 
 <style scoped>
-
 </style>

@@ -4,9 +4,9 @@ import ProfilNavigation from "@/components/Header/Navigation/ProfilNavigation.vu
 </script>
 
 <template>
-  <nav class="nav-second navbar custom-navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+  <nav class="nav-second navbar custom-navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <SecondNavigation />
+    <SecondNavigation />
       <ProfilNavigation />
     </div>
   </nav>
@@ -14,5 +14,4 @@ import ProfilNavigation from "@/components/Header/Navigation/ProfilNavigation.vu
 </template>
 
 <style scoped>
-
 </style>
