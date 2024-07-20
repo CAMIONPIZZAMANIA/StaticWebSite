@@ -1,7 +1,23 @@
 <script setup lang="ts">
+import { useCartStore} from "@/stores/Cart";
+
+const cart = useCartStore();
 </script>
 <template>
-    <div class="contentbar">
+    <div v-if="cart.$state.count === 0" class="contentbar">
+      <!-- Start row -->
+      <div class="row">
+        <!-- Start col -->
+        <div class="col-md-12 col-lg-12 col-xl-12">
+          <div class="card m-b-30">
+            <div class="card-header">
+              <h5 class="card-title">Votre sélection est vide</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-else class="contentbar">
       <!-- Start row -->
       <div class="row">
         <!-- Start col -->

@@ -5442,7 +5442,7 @@ function leverageNative( el, type, expectSync ) {
 				// from an async native handler (gh-4350)
 				if ( !saved.length ) {
 
-					// Store arguments for use when handling the inner native event
+					// stores arguments for use when handling the inner native event
 					// There will always be at least one argument (an event object), so this array
 					// will not be confused with a leftover capture object.
 					saved = slice.call( arguments );
@@ -7355,7 +7355,7 @@ jQuery.fn.extend( {
 				className = getClass( this );
 				if ( className ) {
 
-					// Store className if set
+					// stores className if set
 					dataPriv.set( this, "__className__", className );
 				}
 
