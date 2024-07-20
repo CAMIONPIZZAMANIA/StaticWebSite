@@ -7,7 +7,7 @@
     <div class="d-flex flex-row">
       <ul class="navbar-nav navbar-expand">
         <li class="nav-item">
-          <a class="nav-link" href="#cart">
+          <a class="nav-link" href="#cart" data-target="#cartModal">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </li>

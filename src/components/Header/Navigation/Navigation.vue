@@ -1,16 +1,19 @@
 <script setup>
 import SecondNavigation from "@/components/Header/Navigation/SecondNavigation.vue";
-import ProfilNavigation from "@/components/Header/Navigation/ProfilNavigation.vue";
+import ProfileNavigation from "@/components/Header/Navigation/ProfileNavigation.vue";
+import Cart from "@/components/Header/Navigation/Cart.vue";
 </script>
 
 <template>
   <nav class="nav-second navbar custom-navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-    <SecondNavigation />
-      <ProfilNavigation />
+      <SecondNavigation />
+      <ProfileNavigation />
+    </div>
+    <div class="container-fluid">
+      <Cart />
     </div>
   </nav>
-
 </template>
 
 <style scoped>
