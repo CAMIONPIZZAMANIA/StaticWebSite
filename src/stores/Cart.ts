@@ -1,22 +1,19 @@
 import { defineStore } from 'pinia'
 
-class CartError extends RangeError{}
-
 export const useCartStore = defineStore('cart', {
-    state: () => ({ count: 0, total: 0.00 }),
-    getters: {
-        bool: (state) => state.count,
-        double: (state) => state.total,
+    state: () => ({
+        count: 0,
+        total: 0.00,
+        items:[]
+    }),
+    getters:{
+        getCount:(state)=> state.count,
+        getTotal:(state)=> state.total,
+        getItems:(state)=>state.items
     },
-    actions: {
-        addItem() {
-            throw new CartError('addItem')
-        },
-        removeItem() {
-            throw new CartError('removeItem')
-        },
-        emptyCart(){
-            throw new CartError('emptyCart')
-        },
-    },
+    actions:{
+        addItem(name:string, price:number, quantity:number) {
+            this.items.push({ name, price, quantity })
+        }
+    }
 })

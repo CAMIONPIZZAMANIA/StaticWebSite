@@ -1,15 +1,17 @@
 <script setup>
 import { ref } from 'vue'
-import jsondata from '../../../data/pizzas.json'
 
+import jsondata from '../../../data/pizzas.json'
 const pizzas = ref(jsondata)
 
+import { useCartStore} from "@/stores/Cart";
+const cart = useCartStore();
 </script>
 
 <template>
     <div class="row">
       <div v-for="pizza in pizzas" class="col-md-6 mb-4">
-        <a href="javascrip:void(0)" class="custom-list">
+        <a href="" class="custom-list">
           <div class="info">
             <div class="head clearfix">
               <h5 class="title float-left">{{ pizza.name }}</h5>
@@ -18,7 +20,7 @@ const pizzas = ref(jsondata)
             <div class="body">
               <p>{{ pizza.ingredients }}</p>
             </div>
-            <a class="btn btn-primary mt-3">Ajouter</a>
+            <a class="btn btn-primary mt-3" @click="cart.addItem(pizza.name, 1, pizza.price)">Ajouter</a>
           </div>
         </a>
       </div>
