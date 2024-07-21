@@ -37,21 +37,21 @@ const cart = useCartStore();
                           <tr>
                             <th scope="col">Pizza</th>
                             <th scope="col">Quantité</th>
-                            <th scope="col">Prix Unitaire</th>
+                            <th scope="col">Prix</th>
                             <th scope="col" class="text-right">Total</th>
                             <th scope="col">Retirer</th>
                           </tr>
                           </thead>
                           <tbody>
-                          <tr>
-                            <td>Mozzarella</td>
+                          <tr v-for="item in cart.$state.items">
+                            <td>{{ item.name }}</td>
                             <td>
                               <div class="form-group mb-0">
-                                <input type="number" class="form-control cart-qty" name="cartQty1" id="cartQty1" value="1">
+                                <input type="number" class="form-control cart-qty" name="cartQty" id="cartQty" value="1">
                               </div>
                             </td>
-                            <td>12.00 CHF</td>
-                            <td class="text-right">12.00 CHF</td>
+                            <td>{{ item.price }}.-</td>
+                            <td class="text-right">{{ cart.totalItem(item.name) }}.-</td>
                             <td><a href="#" class="text-danger"><i class="ri-delete-bin-3-line"></i></a></td>
                           </tr>
                           </tbody>
@@ -76,7 +76,7 @@ const cart = useCartStore();
                               <tbody>
                               <tr>
                                 <td class="f-w-7 font-18"><h4>Montant :</h4></td>
-                                <td class="f-w-7 font-18"><h4>CHF 12.00</h4></td>
+                                <td class="f-w-7 font-18"><h4>{{ cart.total() }}.-</h4></td>
                               </tr>
                               </tbody>
                             </table>

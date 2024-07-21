@@ -1,72 +1,72 @@
 [
   {
     "name" : "Margherita",
-    "price" : "12.-",
+    "price" : 12,
     "ingredients" : "Mozzarella"
   },
   {
     "name" : "4 Saisons",
-    "price" : "17.-",
+    "price" : 17,
     "ingredients" : "Jambon, champignons frais, poivrons, artichauts, mozzarella"
   },
   {
     "name" : "Romana",
-    "price" : "15.-",
+    "price" : 15,
     "ingredients" : "Jambon, champignons, mozzarella"
   },
   {
     "name" : "Andalouse",
-    "price" : "16.-",
+    "price" : 16,
     "ingredients" : "Salami piquant, champignons frais, poivrons, câpres, mozzarella"
   },
   {
     "name" : "Napolitaine",
-    "price" : "14.-",
+    "price" : 14,
     "ingredients" : "Anchois, câpres, olives, mozzarella"
   },
   {
     "name" : "Du Chef",
-    "price" : "17.-",
+    "price" : 17,
     "ingredients" : "Chèvre, lardons, champignons frais, crème (mascarpone), mozzarella"
   },
   {
     "name" : "Campagnarde",
-    "price" : "15.-",
+    "price" : "15",
     "ingredients" : "Champignons frais, lardons, mozzarella"
   },
   {
     "name" : "Pizza Mania",
-    "price" : "17.-",
+    "price" : "17",
     "ingredients" : "Champignons frais, lardons, mozzarella"
   },
   {
     "name" : "Campagnarde",
-    "price" : "15.-",
+    "price" : "15",
     "ingredients" : "Champignons frais, oignons, lardons, oeuf, crème (mascarpone), mozzarella"
   },
   {
     "name" : "Charcutière",
-    "price" : "17.-",
+    "price" : "17",
     "ingredients" : "Jambon, lardons, salami piquant, mozzarella"
   },
   {
     "name" : "Végétarienne",
-    "price" : "15.-",
+    "price" : "15",
     "ingredients" : "Champignons frais, poivrons, artichauts, oignons, mozzarella"
   },
   {
     "name" : "4 Fromages",
-    "price" : "16.-",
+    "price" : "16",
     "ingredients" : "Chèvre, gorgonzola, pecorino romano, mozzarella"
   },
   {
     "name" : "Hawaïenne",
-    "price" : "15.-",
+    "price" : "15",
     "ingredients" : "Jambon, ananas, mozzarella"
   },
   {
     "name": "Vaudoise",
-    "price": "17.-",
+    "price": "17",
     "ingredients": "Tomme vaudoise, champignons frais, lardons, mozzarella"
   }
 ]

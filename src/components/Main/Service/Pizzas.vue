@@ -15,7 +15,7 @@ const cart = useCartStore();
           <div class="info">
             <div class="head clearfix">
               <h5 class="title float-left">{{ pizza.name }}</h5>
-              <p class="float-right text-primary">{{ pizza.price }}</p>
+              <p class="float-right text-primary">{{ pizza.price }}.-</p>
             </div>
             <div class="body">
               <p>{{ pizza.ingredients }}</p>
