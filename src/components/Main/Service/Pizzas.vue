@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import jsondata from '../../../data/pizzas.json'
 const pizzas = ref(jsondata)
 
-import { useCartStore} from "@/stores/Cart";
+import { useCartStore} from "@/stores/cart.ts";
 const cart = useCartStore();
 </script>
 
