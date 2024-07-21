@@ -4,7 +4,7 @@ import { useCartStore} from "@/stores/Cart";
 const cart = useCartStore();
 </script>
 <template>
-    <div v-if="cart.$state.count === 0" class="contentbar">
+    <div v-if="cart.$state.items.length === 0" class="contentbar">
       <!-- Start row -->
       <div class="row">
         <!-- Start col -->

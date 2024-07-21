@@ -9,10 +9,10 @@ export const useCartStore = defineStore('cart', {
     getters:{
         getCount:(state)=> state.count,
         getTotal:(state)=> state.total,
-        getItems:(state)=>state.items
+        getItems:(state)=> state.items
     },
     actions:{
-        addItem(name:string, price:number, quantity:number) {
+        addItem(name:string, price:string, quantity:number) {
             this.items.push({ name, price, quantity })
         }
     }

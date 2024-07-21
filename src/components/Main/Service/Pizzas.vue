@@ -20,7 +20,7 @@ const cart = useCartStore();
             <div class="body">
               <p>{{ pizza.ingredients }}</p>
             </div>
-            <a class="btn btn-primary mt-3" @click="cart.addItem(pizza.name, 1, pizza.price)">Ajouter</a>
+            <a class="btn btn-primary mt-3" @click="cart.addItem(pizza.name, pizza.price, 1)">Ajouter</a>
           </div>
         </a>
       </div>
