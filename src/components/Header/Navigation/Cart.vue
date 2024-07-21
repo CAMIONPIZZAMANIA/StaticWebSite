@@ -86,7 +86,7 @@ const cart = useCartStore();
                     </div>
                     <div class="cart-footer text-right">
                       <a href="" class="btn btn-danger my-1"><i class="ri-arrow-left-line ml-2"></i>Ajouter une pizza</a>
-                      <a href="" class="btn btn-success my-1">Réserver<i class="ri-arrow-right-line ml-2"></i></a>
+                      <a href="" class="btn btn-success my-1" @click="cart.emptyCart()">Réserver<i class="ri-arrow-right-line ml-2"></i></a>
                     </div>
                   </div>
                 </div>

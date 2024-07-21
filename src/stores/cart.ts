@@ -22,6 +22,9 @@ export const useCartStore = defineStore('cart', {
         totalItem(nameToFind:string){
             const itemFound = this.items.find((item) => item.name == nameToFind)
             return itemFound.quantity * itemFound.price
+        },
+        emptyCart(){
+            this.items = []
         }
     }
 })
