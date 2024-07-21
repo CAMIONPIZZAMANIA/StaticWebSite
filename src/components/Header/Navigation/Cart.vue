@@ -76,7 +76,7 @@ const cart = useCartStore();
                               <tbody>
                               <tr>
                                 <td class="f-w-7 font-18"><h4>Montant :</h4></td>
-                                <td class="f-w-7 font-18"><h4>{{ cart.total() }}.-</h4></td>
+                                <td class="f-w-7 font-18"><h4>{{ cart.total }}.-</h4></td>
                               </tr>
                               </tbody>
                             </table>
