@@ -3,6 +3,7 @@ import { useCartStore} from "@/stores/cart";
 
 const cart = useCartStore();
 </script>
+
 <template>
     <div v-if="cart.$state.items.length === 0" class="contentbar">
       <!-- Start row -->
@@ -47,7 +48,7 @@ const cart = useCartStore();
                             <td>{{ item.name }}</td>
                             <td>
                               <div class="form-group mb-0">
-                                <input type="number" class="form-control cart-qty" name="cartQty" id="cartQty" value="1">
+                                <input type="number" class="form-control cart-qty" name="cartQty" id="cartQty" :value=item.quantity>
                               </div>
                             </td>
                             <td>{{ item.price }}.-</td>
