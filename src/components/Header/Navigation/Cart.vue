@@ -53,7 +53,7 @@ const cart = useCartStore();
                             </td>
                             <td>{{ item.price }}.-</td>
                             <td class="text-right">{{ cart.totalItem(item.name) }}.-</td>
-                            <td><a href="#" class="text-danger"><i class="ri-delete-bin-3-line"></i></a></td>
+                            <td><a href="#" class="text-danger" @click="cart.removeItem(item)"><i class="fa fa-trash-o"></i></a></td>
                           </tr>
                           </tbody>
                         </table>
@@ -87,7 +87,7 @@ const cart = useCartStore();
                     </div>
                     <div class="cart-footer text-right">
                       <a href="" class="btn btn-danger my-1"><i class="ri-arrow-left-line ml-2"></i>Ajouter une pizza</a>
-                      <a href="" class="btn btn-success my-1" @click="cart.emptyCart()">Réserver<i class="ri-arrow-right-line ml-2"></i></a>
+                      <a href="" class="btn btn-success my-1" @click="cart.emptyCart()">Réserver</a>
                     </div>
                   </div>
                 </div>

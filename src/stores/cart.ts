@@ -27,7 +27,6 @@ export const useCartStore = defineStore('cart', {
                 let existingQuantity = 0
                 if(existingItem !== undefined){
                     existingQuantity += existingItem.quantity
-                    //this.items.delete(existingItem)
                     this.items = this.items.filter(item => item !== existingItem)
                 }
                 //new add
@@ -36,12 +35,15 @@ export const useCartStore = defineStore('cart', {
                 let result = e.message;
             }
         },
+        emptyCart(){
+            this.items = []
+        },
+        removeItem(itemToRemove:string){
+            this.items = this.items.filter(item => item !== itemToRemove)
+        },
         totalItem(nameToFind:string){
             const itemFound = this.findItemByName(nameToFind)
             return itemFound.quantity * itemFound.price
-        },
-        emptyCart(){
-            this.items = []
         }
     }
 })
