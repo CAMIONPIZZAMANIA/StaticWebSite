@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { useCartStore} from "@/stores/cart";
 const cart = useCartStore();
+
+
+import { ref } from 'vue'
+
+const newQuantity = ref(0)
+
 </script>
 
 <template>
@@ -11,13 +17,14 @@ const cart = useCartStore();
         <div class="col-md-12 col-lg-12 col-xl-12">
           <div class="card m-b-30">
             <div class="card-header">
-              <h5 class="card-title">Votre sélection</h5>
+              <h5 v-if="cart.$state.items.length === 0" class="card-title">Votre sélection est vide !</h5>
+              <h5 v-else class="card-title">Votre sélection</h5>
             </div>
             <div class="card-body">
               <div class="row justify-content-center">
                 <div class="col-lg-10 col-xl-8">
                   <div class="cart-container">
-                    <div class="cart-head">
+                    <div  v-if="cart.$state.items.length !== 0" class="cart-head">
                       <div class="table-responsive">
                         <table class="table table-borderless">
                           <thead>
@@ -34,7 +41,7 @@ const cart = useCartStore();
                             <td>{{ item.name }}</td>
                             <td>
                               <div class="form-group mb-0">
-                                <input type="number" class="form-control cart-qty" name="cartQty" id="cartQty" :value=item.quantity>
+                                <input type="number" class="form-control" name="cartQty" id="cartQty" :value=item.quantity>
                               </div>
                             </td>
                             <td>{{ item.price }}.-</td>
@@ -45,11 +52,11 @@ const cart = useCartStore();
                         </table>
                       </div>
                     </div>
-                    <div class="cart-body">
+                    <div v-if="cart.$state.items.length !== 0" class="cart-body">
                       <div class="row">
                         <div class="col-md-12 order-2 order-lg-1 col-lg-5 col-xl-6">
                           <div class="order-note">
-                            <form>
+                            <form class="card-title">
                               <div class="form-group">
                                 <label for="specialNotes">Message pour Olivier:</label>
                                 <textarea class="form-control" name="specialNotes" id="specialNotes" rows="3" placeholder="Ajouter un ingrédient, demander une cuisson spéciale,..."></textarea>
@@ -73,7 +80,7 @@ const cart = useCartStore();
                     </div>
                     <div class="cart-footer text-right">
                       <a href="" class="btn btn-danger my-1" @click="cart.show()">Ajouter une pizza</a>
-                      <a href="" class="btn btn-success my-1" @click="cart.emptyCart()">Réserver</a>
+                      <a v-if="cart.$state.items.length !== 0" href="" class="btn btn-success my-1" @click="cart.emptyCart()">Réserver</a>
                     </div>
                   </div>
                 </div>
