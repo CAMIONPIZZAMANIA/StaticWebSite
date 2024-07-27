@@ -5,7 +5,8 @@ export const useCartStore = defineStore('cart', {
         if (localStorage.getItem("cart"))
             return JSON.parse(localStorage.getItem("cart"));
         return {
-            items: []
+            items: [],
+            visible : false,
         }
     },
     getters:{
@@ -13,6 +14,11 @@ export const useCartStore = defineStore('cart', {
             let tot=0
             state.items.forEach(item => tot += item.quantity * item.price)
             return tot
+        },
+        amount(state){
+            let amount:number = 0
+            state.items.forEach(item => amount += item.quantity)
+            return amount
         }
     },
     actions:{
@@ -29,7 +35,7 @@ export const useCartStore = defineStore('cart', {
                     existingQuantity += existingItem.quantity
                     this.items = this.items.filter(item => item !== existingItem)
                 }
-                //new add
+                //add item (new or updated)
                 this.items.push({ name: name, price: price, quantity : quantity + existingQuantity })
             }catch (e){
                 let result = e.message;
@@ -37,6 +43,7 @@ export const useCartStore = defineStore('cart', {
         },
         emptyCart(){
             this.items = []
+            this.visible = false
         },
         removeItem(itemToRemove:string){
             this.items = this.items.filter(item => item !== itemToRemove)
@@ -44,6 +51,14 @@ export const useCartStore = defineStore('cart', {
         totalItem(nameToFind:string){
             const itemFound = this.findItemByName(nameToFind)
             return itemFound.quantity * itemFound.price
+        },
+        show(){
+            try{
+                this.visible = !this.visible
+            }
+            catch(e){
+                let result = e.message;
+            }
         }
     }
 })

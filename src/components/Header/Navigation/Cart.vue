@@ -1,24 +1,10 @@
 <script setup lang="ts">
 import { useCartStore} from "@/stores/cart";
-
 const cart = useCartStore();
 </script>
 
 <template>
-    <div v-if="cart.$state.items.length === 0" class="contentbar">
-      <!-- Start row -->
-      <div class="row">
-        <!-- Start col -->
-        <div class="col-md-12 col-lg-12 col-xl-12">
-          <div class="card m-b-30">
-            <div class="card-header">
-              <h5 class="card-title">Votre sélection est vide</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div v-else class="contentbar">
+    <div v-if="cart.$state.visible" class="contentbar">
       <!-- Start row -->
       <div class="row">
         <!-- Start col -->
@@ -86,7 +72,7 @@ const cart = useCartStore();
                       </div>
                     </div>
                     <div class="cart-footer text-right">
-                      <a href="" class="btn btn-danger my-1"><i class="ri-arrow-left-line ml-2"></i>Ajouter une pizza</a>
+                      <a href="" class="btn btn-danger my-1" @click="cart.show()">Ajouter une pizza</a>
                       <a href="" class="btn btn-success my-1" @click="cart.emptyCart()">Réserver</a>
                     </div>
                   </div>
