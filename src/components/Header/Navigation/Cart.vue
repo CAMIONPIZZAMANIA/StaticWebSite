@@ -2,10 +2,9 @@
 import { useCartStore} from "@/stores/cart";
 const cart = useCartStore();
 
-
-import { ref } from 'vue'
-
-const newQuantity = ref(0)
+function updateItemQuantity(itemName: string, newQuantity:number): void {
+  cart.updateItemQuantity(itemName, newQuantity)
+}
 
 </script>
 
@@ -41,7 +40,7 @@ const newQuantity = ref(0)
                             <td>{{ item.name }}</td>
                             <td>
                               <div class="form-group mb-0">
-                                <input type="number" class="form-control" name="cartQty" id="cartQty" :value=item.quantity>
+                                <input type="number" min="1" class="form-control" name="cartQty" id="cartQty" :value=item.quantity @input="updateItemQuantity(item.name, item.quantity)">
                               </div>
                             </td>
                             <td>{{ item.price }}.-</td>

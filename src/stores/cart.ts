@@ -28,18 +28,14 @@ export const useCartStore = defineStore('cart', {
         },
         //public methods
         addItem(name:string, price:number, quantity:number){
-            try{
-                let existingItem = this.findItemByName(name)
-                let existingQuantity = 0
-                if(existingItem !== undefined){
-                    existingQuantity += existingItem.quantity
-                    this.items = this.items.filter(item => item !== existingItem)
-                }
-                //add item (new or updated)
-                this.items.push({ name: name, price: price, quantity : quantity + existingQuantity })
-            }catch (e){
-                let result = e.message;
+            let existingItem = this.findItemByName(name)
+            let existingQuantity = 0
+            if(existingItem !== undefined){
+                existingQuantity += existingItem.quantity
+                this.items = this.items.filter(item => item !== existingItem)
             }
+            //add item (new or updated)
+            this.items.push({ name : name, price: price, quantity : quantity + existingQuantity })
         },
         emptyCart(){
             this.items = []
@@ -47,18 +43,22 @@ export const useCartStore = defineStore('cart', {
         },
         removeItem(itemToRemove:string){
             this.items = this.items.filter(item => item !== itemToRemove)
+            if(this.items.length === 0){
+                this.visible = false
+            }
         },
         totalItem(nameToFind:string){
             const itemFound = this.findItemByName(nameToFind)
             return itemFound.quantity * itemFound.price
         },
         show(){
-            try{
-                this.visible = !this.visible
-            }
-            catch(e){
-                let result = e.message;
-            }
+            this.visible = !this.visible
+        },
+        updateItemQuantity(itemName:string, newQuantity:number){
+            let itemToUpdate = this.findItemByName(itemName)
+            this.items = this.items.filter(item => item !== itemToUpdate)
+            //update quantity
+            this.items.push({ name : itemToUpdate.name, price : itemToUpdate.price, quantity : newQuantity })
         }
     }
 })
